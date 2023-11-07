@@ -11,9 +11,9 @@ import wind_icon from '../Asset/wind.png'
 
 
 const WeatherApp = () => {
-
-    let api_key = "02d7eb4365077ebb816ada6ba0445f9b";
-
+    
+    let api_key = `${process.env.REACT_APP_WEATHER_API_KEY}`;
+    
     const [wicon,setWicon] = useState(cloud_icon);
 
     const search = async () => {
